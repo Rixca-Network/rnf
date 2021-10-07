@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 .font-space {
-	font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.sidebar {
+  top: 0;
+}
+
+.act {
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.nact {
+  left: -500px;
+  transition: all 1s ease-in-out;
+}
+
+.act .inner-sidebar {
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-in-out;
+}
+
+.nact .inner-sidebar {
+  position: absolute;
+  left: -500px;
+  transition: all 0.5s ease-in-out;
 }
